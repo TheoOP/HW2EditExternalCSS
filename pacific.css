@@ -1,0 +1,133 @@
+
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {/*Setup background picture and solid color to continue where gradiene ends */
+	background: url("./ptrbackground.jpg");	
+	background-repeat: no-repeat;
+
+	background-size: 100% 100%;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:  #00569f;
+	display: flex;
+	justify-content: center;
+}
+
+#wrapper{/*Overall Grid setup for item content placement */
+	min-width: 600px;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 200px 1fr 1fr 1fr;
+	grid-template-rows: 50px 1fr 1fr 50px;
+	padding: 10px;
+	box-sizing: border-box;
+	
+
+}
+#content {/*Setting up content location through grid and matching bottom spacing
+	 between footer and content with padding */
+	background-color: #FFFFFF;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	padding-right: 10px;
+	padding-bottom: 80px;
+}
+
+#content > ul{/*Setting up special bullets */
+	list-style: none; 
+	list-style-image: url('marker.gif');
+	margin-left: 5px;
+	list-style-position: inside;
+}
+
+
+#content {
+	padding-left: 20px;
+}
+
+img{/*Allowing text to follow image horizontally*/
+	float: left;
+	margin-right: 20px;
+}
+
+
+header {/*Placing Header in correct locating with grid */
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	color: #FFFFFF;
+	margin-top: -20px;
+}
+
+nav {/*Placing Navbar in correct locating with grid */
+	grid-row-start: 2;
+	grid-row-end: 5;
+	background-color: #90c7e3;
+}
+
+
+
+nav ul {
+	font-size: 1.2em;
+	font-weight: bold;
+	list-style-type: none;
+	margin-left: -20px;
+}
+nav a{
+	color: #01044a;
+}
+nav a:visited {
+	text-decoration: none;
+	color: #344873;
+}
+nav a:link {
+	text-decoration: none;
+	}
+nav a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+h1 {/*Placing sunset image in right section of header */
+	padding: 10px;
+	background-color: #000033;
+	background-position: right;
+	background-image: url("./sunset.jpg");
+	background-repeat: no-repeat;
+
+}
+h2 {
+	color: #349ccc;
+}
+
+.resort{
+	color: #64819e;
+	font-weight: bold;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {/*Placing Footer in correct locating with grid and
+	emulating space from original image with padding */
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: .7em;
+	margin-top:-1px;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 5;
+	background-color: #FFFFFF;
+	padding-left: 15px;
+}
