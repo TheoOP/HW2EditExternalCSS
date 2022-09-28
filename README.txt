@@ -1,6 +1,6 @@
 
 /**********************************************************************
-# HW2EditExternalCSS Python, Pandas, and PyPlot                    
+# HW2EditExternalCSS                    
 **********************************************************************/
 Your name:Theo Opoku
  
